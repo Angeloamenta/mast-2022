@@ -617,6 +617,10 @@ a:focus {
 	color: #000;
 
 }
+
+.fs-rem-2 {
+	font-size: 2rem;
+}
 /* media */
 
 @media screen and (max-width: 940px) {
