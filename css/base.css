@@ -489,8 +489,13 @@ a:focus {
 .row-overflow {
 	overflow-x: scroll;
 	width: 90%;
+	z-index: 10;
+	position: relative;
 }
 
+.row-overflow .col {
+	margin: 0 20px;
+}
 .card {
 	width: 430.1px;
     height: 312.3px;
@@ -620,6 +625,11 @@ a:focus {
 
 .fs-rem-2 {
 	font-size: 2rem;
+}
+
+.down-card {
+	position: relative;
+	bottom: -30px;
 }
 /* media */
 
