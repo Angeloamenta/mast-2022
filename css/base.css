@@ -716,7 +716,6 @@ a:focus {
 
 .location-card-container {
 	flex-wrap: nowrap;
-	overflow-x: scroll;
 	position: relative;
 
 }
