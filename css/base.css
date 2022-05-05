@@ -708,6 +708,46 @@ a:focus {
 
 }
 
+.location-card {
+	max-width: 513.7px;
+	height: 475.2px;
+	position: relative;
+}
+
+.location-card-title {
+	background-color: #f4f4f4;
+	height: 90%;
+	width: 90%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+	border: 1px solid black;
+	color: #000;
+}
+
+.location-orange {
+	background-color: orange;
+	height: 90%;
+	width: 90%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	border: 1px solid black;
+}
+
+.location-player{
+	background-color: #f4f4f4;
+	position: absolute;
+	height: 25%;
+	width: 70%;
+	bottom: 5%;
+	left: -10%;
+	z-index: 4;
+	border: 1px solid black;
+	color: #000;
+}
 /* media */
 
 @media screen and (max-width: 940px) {
