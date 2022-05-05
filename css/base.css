@@ -671,6 +671,8 @@ a:focus {
 .ticket-container {
 	background-color: #ece9e9;
 	height: 50vh;
+	z-index: -2;
+	position: relative;
 }
 
 .ticket-day {
@@ -680,6 +682,32 @@ a:focus {
 	color: #000;
 
 }
+
+/* LOCATION */
+
+.location-title{
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+	text-align: center;
+	height: 101px;
+	position: relative;
+	background-color: #1c1c1c;
+}
+
+.location-title h2 {
+	color: #ffffff;
+	font-size: 75px;
+}
+
+.stone-location{
+	position: absolute;
+	left: 10px;
+	width: 270px;
+	top: -60px;
+	z-index: -1;
+
+}
+
 /* media */
 
 @media screen and (max-width: 940px) {
