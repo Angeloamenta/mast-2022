@@ -724,6 +724,9 @@ a:focus {
 	margin-top: 80px;
 }
 
+.mb-80{
+	margin-bottom: 80px;
+}
 .location-card {
 	min-width: 513.7px;
 	height: 475.2px;
@@ -784,7 +787,7 @@ a:focus {
 }
 
 
-/* NEWS */
+/* SPONSOR */
 
 
 .sponsor {
@@ -799,6 +802,23 @@ a:focus {
 .sponsor-title h2 {
 	color: #ffffff;
 	font-size: 75px;
+}
+
+.stone-sponsor-1{
+	position: absolute;
+	top: -66%;
+	left: 5%;
+	width: 302px;
+	z-index: -1;
+  
+}
+
+.stone-sponsor-2{
+	position: absolute;
+	top: 25%;
+	right: 40%;
+	width: 220.9px;
+	transform: rotate(-315deg);
 }
 
 
