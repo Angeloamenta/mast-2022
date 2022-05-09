@@ -503,8 +503,8 @@ a:focus {
 	margin: 0 20px;
 }
 .card {
-	width: 430.1px;
-    height: 312.3px;
+	width: 90%;
+    height: 90%;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -529,8 +529,8 @@ a:focus {
 }
 
 .vector {
-  width: 430.1px;
-  height: 312.3px;
+  width: 90%;
+  height: 90%;
   margin: 24.7px 43.9px 0 0;
   padding: 0.6px 1.1px 0.6px 1.1px;
   background-color: greenyellow;
