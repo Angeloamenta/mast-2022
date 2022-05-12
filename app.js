@@ -68,3 +68,72 @@ function change() {
 //   flag = false;
 //   TweenLite.to($circle,0.4,{scale:0.1,autoAlpha:0})
 // });
+
+
+// var app = new Vue({
+//   el: '#app',
+//   data: {
+
+//   },
+
+//   methods: {
+
+//     activeDisplay() {
+//       console.log("ciao");
+//     }
+//   },
+
+//   created() {
+//     console.log("ciao");
+//   }
+// });
+
+
+const newsTitle = document.querySelector(".news-title");
+
+
+  newsTitle.addEventListener("click", function(){
+     const newsContainer = document.querySelector(".news-cards-container");
+     console.log(newsContainer.classList);
+     newsContainer.classList.toggle("d-none")
+    }); 
+
+
+    const artistTitle = document.querySelector(".artisti-title");
+
+
+  artistTitle.addEventListener("click", function(){
+     const artistContainer = document.querySelector(".artist-cards-container");
+     console.log(artistContainer.classList);
+     artistContainer.classList.toggle("d-none")
+    }); 
+
+
+    const ticketTitle = document.querySelector(".ticket-title");
+
+
+  ticketTitle.addEventListener("click", function(){
+     const ticketContainer = document.querySelector(".ticket-container");
+     console.log(ticketContainer.classList);
+     ticketContainer.classList.toggle("d-none")
+    }); 
+
+
+    const locationTitle = document.querySelector(".location-title");
+
+
+  locationTitle.addEventListener("click", function(){
+     const locationContainer = document.querySelector(".location-container");
+     console.log(locationContainer.classList);
+     locationContainer.classList.toggle("d-none")
+    }); 
+
+
+    const sponsorTitle = document.querySelector(".sponsor-title");
+
+
+  sponsorTitle.addEventListener("click", function(){
+     const sponsorContainer = document.querySelector(".sponsor-container");
+     console.log(sponsorContainer.classList);
+     sponsorContainer.classList.toggle("d-none")
+    }); 

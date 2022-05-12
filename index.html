@@ -23,6 +23,8 @@
 	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
 	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+
 	<!--script ispirato a src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
 	<script
   src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -30,7 +32,7 @@
 
 <body class="demo-1">
 
-
+	<div id="app">
 	<main >
 		<section class="main">
 			<div class="frame">
@@ -119,12 +121,12 @@
 		<!-- news  -->
 
 		<section class="news">
-			<div class="news-title">
+			<div class="news-title d-flex align-items-center justify-content-center" >
 				<h2>NEWS</h2>
 				<img class="stone-img-sx" src="img/cursor1.png">
 				<img class="stone-img-dx" src="img/cursor1.png">
 			</div>
-			<div class="news-cards-container">
+			<div class="news-cards-container d-none d-sm-block">
 				<div class="inner-cards-container container-fluid">
 					<div class="row flex-nowrap row-overflow">
 						<div class="col">
@@ -205,17 +207,17 @@
 		<section id="artisti" class="artisti">
 			<div class="container-fluid mb-5">
 				<div class="row artisti-title">
-					<div class="col-12 col-md-6 d-flex align-items-center justify-content-start">
+					<div class=" col-6 d-none d-sm-flex align-items-center justify-content-start">
 						<h2>ARTISTI</h2>
 					</div>
-					<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+					<div class=" col-6 d-flex justify-content-center align-items-center">
 						<h2>LINE UP</h2>
 					</div>
 					<img class="stone-artisti" src="img/cursor1.png">
 				</div>
 			</div>
 			<div>
-				<div class="container-fluid mt-5 py-5">
+				<div class="artist-cards-container container-fluid d-none d-sm-block mt-5 py-5">
 					<div class="inner-cards-container">
 						<div class="row flex-nowrap py-5 row-overflow">
 							<div class="col mx-4">
@@ -411,14 +413,14 @@
 					<div class="col-6 d-flex">
 						<h2>TICKET</h2>
 					</div>
-					<div class="col-6 d-flex">
+					<div class="col-6 d-none d-sm-flex">
 						<h2>TICKET</h2>
 					</div>
 				</div>
 				<img class="stone-ticket-1" src="img/cursor1.png">
 				<img class="stone-ticket-2" src="img/cursor1.png">
 			</div>
-			<div class="container-fluid ticket-container">
+			<div class="container-fluid ticket-container d-none d-sm-block">
 				<div class="row h-100 justify-content-center align-items-center">
 					<div class="col-12 col-md-2 d-flex justify-content-center">
 						<a href="" class="ticket-day">
@@ -447,13 +449,13 @@
 					<div class="col-6 d-flex">
 						<h2>LOCATION</h2>
 					</div>
-					<div class="col-6 d-flex">
+					<div class="col-6 d-none d-sm-flex">
 						<h2>LOCATION</h2>
 					</div>
 				</div>
 				<img class="stone-location" src="img/cursor1.png">
 			</div>
-			<div class=" mt-80 mb-5 row-overflow container-fluid d-flex align-items-center py-5">
+			<div class=" mt-80 mb-5 row-overflow container-fluid align-items-center py-5 d-none d-sm-flex location-container">
 				<div class="row d-flex  location-card-container px-5">
 					<div class="col-3 location-card">
 						<div class="location-card-title">
@@ -635,15 +637,20 @@
 		<section id="sponsor" class="sponsor">
 			<div class="container-fluid sponsor-title">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-6 d-none d-sm-flex">
 						<h2>SUPPORT</h2>
 					</div>
-					<div class="col-6 d-flex justify-content-end">
+					<div class="col-6 justify-content-end">
 						<h2>SPONSOR</h2>
 					</div>
 				</div>
 				<img class="stone-sponsor-1" src="img/cursor1.png">
 				<img class="stone-sponsor-2" src="img/cursor1.png">
+			</div>
+			<div class="sponsor-container d-none d-sm-flex">
+				<div>
+					sponsor container
+				</div>
 			</div>
 
 		</section>
@@ -674,7 +681,8 @@
 			</div>
 		</div>
 	</footer>
-	<script src="app.js" >	</script>
+	</div>
+<script src="app.js" >	</script>
 </body>
 
 </html>
