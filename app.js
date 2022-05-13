@@ -96,6 +96,10 @@ const newsTitle = document.querySelector(".news-title");
      console.log(newsContainer.classList);
      newsContainer.classList.toggle("d-none");
 
+     setTimeout(function () {
+      newsContainer.classList.remove("opacity");
+   }, 20);
+
      const iconNewsPiu = document.querySelector(".icona-news-p");
      const iconNewsMeno = document.querySelector(".icona-news-m");
 
@@ -104,6 +108,7 @@ const newsTitle = document.querySelector(".news-title");
      if (!newsContainer.classList.contains("d-none")) {
       iconNewsMeno.classList.remove("d-none");
       iconNewsPiu.classList.add("d-none");
+      newsContainer.classList.add("opacity");
      }else {
       iconNewsMeno.classList.add("d-none");
       iconNewsPiu.classList.remove("d-none");
@@ -120,6 +125,10 @@ const newsTitle = document.querySelector(".news-title");
      console.log(artistContainer.classList);
      artistContainer.classList.toggle("d-none")
 
+     setTimeout(function () {
+      artistContainer.classList.remove("opacity");
+   }, 20);
+
      const iconartistiPiu = document.querySelector(".icona-artisti-p");
      const iconartistiMeno = document.querySelector(".icona-artisti-m");
 
@@ -128,6 +137,8 @@ const newsTitle = document.querySelector(".news-title");
      if (!artistContainer.classList.contains("d-none")) {
       iconartistiMeno.classList.remove("d-none");
       iconartistiPiu.classList.add("d-none");
+      artistContainer.classList.add("opacity");
+
      }else {
       iconartistiMeno.classList.add("d-none");
       iconartistiPiu.classList.remove("d-none");
@@ -143,6 +154,10 @@ const newsTitle = document.querySelector(".news-title");
      console.log(ticketContainer.classList);
      ticketContainer.classList.toggle("d-none");
 
+     setTimeout(function () {
+      ticketContainer.classList.remove("opacity");
+   }, 20);
+
      const iconticketPiu = document.querySelector(".icona-ticket-p");
      const iconticketMeno = document.querySelector(".icona-ticket-m");
 
@@ -151,6 +166,8 @@ const newsTitle = document.querySelector(".news-title");
      if (!ticketContainer.classList.contains("d-none")) {
       iconticketMeno.classList.remove("d-none");
       iconticketPiu.classList.add("d-none");
+      ticketContainer.classList.add("opacity");
+
      }else {
       iconticketMeno.classList.add("d-none");
       iconticketPiu.classList.remove("d-none");
@@ -166,6 +183,10 @@ const newsTitle = document.querySelector(".news-title");
      console.log(locationContainer.classList);
      locationContainer.classList.toggle("d-none");
 
+     setTimeout(function () {
+      locationContainer.classList.remove("opacity");
+   }, 20);
+
      const iconlocationPiu = document.querySelector(".icona-location-p");
      const iconlocationMeno = document.querySelector(".icona-location-m");
 
@@ -174,6 +195,8 @@ const newsTitle = document.querySelector(".news-title");
      if (!locationContainer.classList.contains("d-none")) {
       iconlocationMeno.classList.remove("d-none");
       iconlocationPiu.classList.add("d-none");
+      locationContainer.classList.add("opacity");
+
      }else {
       iconlocationMeno.classList.add("d-none");
       iconlocationPiu.classList.remove("d-none");
@@ -189,6 +212,10 @@ const newsTitle = document.querySelector(".news-title");
      console.log(sponsorContainer.classList);
      sponsorContainer.classList.toggle("d-none");
 
+     setTimeout(function () {
+      sponsorContainer.classList.remove("opacity");
+   }, 20);
+
      const iconsponsorPiu = document.querySelector(".icona-sponsor-p");
      const iconsponsorMeno = document.querySelector(".icona-sponsor-m");
 
@@ -197,6 +224,8 @@ const newsTitle = document.querySelector(".news-title");
      if (!sponsorContainer.classList.contains("d-none")) {
       iconsponsorMeno.classList.remove("d-none");
       iconsponsorPiu.classList.add("d-none");
+      sponsorContainer.classList.add("opacity");
+
      }else {
       iconsponsorMeno.classList.add("d-none");
       iconsponsorPiu.classList.remove("d-none");

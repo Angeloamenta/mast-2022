@@ -863,6 +863,15 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
+	.opacity {
+		opacity: 0;
+	}
+
+	.d-block {
+		opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
 	.stone {
 		height: 250px;
 	}
@@ -898,6 +907,10 @@ footer {
 	}
 	/* news */
 
+	.news-cards-container {
+		transition: all 2s linear;
+	}
+
 	.row-news {
 		overflow-x: scroll;
 		display: flex;
@@ -927,6 +940,10 @@ footer {
 	}
 	
 	/* artisti */
+
+	.artist-cards-container {
+		transition: all 2s linear;
+	}
 	.artisti-title{
 		border-top: 0;
 	}
@@ -984,6 +1001,10 @@ footer {
 	}
 
 	/* ticket  */
+
+	.ticket-container {
+		transition: all 2s linear;
+	}
 	.ticket-title{
 		border-top: 0;
 	}
@@ -997,6 +1018,9 @@ footer {
 	}
 
 	/* location */
+	.location-container {
+		transition: all 2s linear;
+	}
 	.location-title{
 		border-top: 0;
 	}
@@ -1011,6 +1035,11 @@ footer {
 
 
 	/* sponsor */
+	.sponsor-container {
+		transition: all 2s linear;
+
+
+	}
 	.sponsor-title{
 		border-top: 0;
 	}
