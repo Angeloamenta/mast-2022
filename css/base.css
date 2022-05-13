@@ -13,6 +13,10 @@ html{
 
 }
 
+.main {
+	overflow: hidden;
+	position: relative;
+}
 
 
 *{
@@ -953,7 +957,7 @@ footer {
 	.card-artisti {
 		width: 302.7px;
 		height: 415.2px;
-		margin-bottom: 100px;
+		margin-bottom: 170px;
 	}
 
 	.artista-title h2{
@@ -1005,6 +1009,3 @@ footer {
 	}
 }
 
-.main {
-	overflow: hidden;
-}

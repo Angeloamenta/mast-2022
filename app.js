@@ -30,8 +30,7 @@ function change() {
 
  $(mainProva).mousemove(function (e) {
     $(".stone").css({ left: e.pageX - 60, top: e.pageY - 60 });
-    // $(".stone").css('display', 'block' );
-         });
+  });
 
 
 // $(mainProva).mouseout(function(){
@@ -137,3 +136,11 @@ const newsTitle = document.querySelector(".news-title");
      console.log(sponsorContainer.classList);
      sponsorContainer.classList.toggle("d-none")
     }); 
+
+
+//     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+// if (viewportWidth > 640) {
+// 	console.log('Wide viewport');
+// } else {
+// 	console.log('Small viewport');
+// }
