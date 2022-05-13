@@ -413,13 +413,13 @@ a:focus {
 /* Set a specific color for each brand */
 
 /* Facebook */
-.fa-facebook {
+.fa-facebook-f {
   background: transparent;
   color: white;
 	font-size: 50px;
 }
 
-.fa-facebook:before {
+.fa-facebook-f:before {
     font-size: 50px;
 	}
 
@@ -891,10 +891,15 @@ footer {
 	.down-card {
 		bottom: 0;
 	}
+
+	.fa-solid {
+		font-size: 1.8em;
+		margin-right: 15px;
+	}
 	/* news */
 
 	.news-title h2 {
-		font-size: 20px;
+		font-size: 1.8em;
 	}
 
 	.stone-img-sx {
@@ -947,7 +952,7 @@ footer {
 	}
 
 	.player h2 {
-		font-size: 20px;
+		font-size: 1.8em;
 	}
 
 	.player h5 {
@@ -965,7 +970,7 @@ footer {
 	}
 
 	.artista-title h2{
-		font-size: 20px;
+		font-size: 1.8em;
 	}
 
 	.artista-title h5 {
@@ -977,7 +982,7 @@ footer {
 		border-top: 0;
 	}
 	.ticket-title h2{
-		font-size: 20px;
+		font-size: 1.8em;
 	}
 	
 	.stone-ticket-1,
@@ -991,7 +996,7 @@ footer {
 	}
 
 	.location-title h2{
-		font-size: 20px;
+		font-size: 1.8em;
 	}
 
 	.stone-location{
@@ -1004,7 +1009,7 @@ footer {
 		border-top: 0;
 	}
 	.sponsor-title h2 {
-		font-size: 20px;
+		font-size: 1.8em;
 	}
 
 	.stone-sponsor-1,

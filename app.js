@@ -94,7 +94,21 @@ const newsTitle = document.querySelector(".news-title");
   newsTitle.addEventListener("click", function(){
      const newsContainer = document.querySelector(".news-cards-container");
      console.log(newsContainer.classList);
-     newsContainer.classList.toggle("d-none")
+     newsContainer.classList.toggle("d-none");
+
+     const iconNewsPiu = document.querySelector(".icona-news-p");
+     const iconNewsMeno = document.querySelector(".icona-news-m");
+
+     console.log(iconNewsPiu, iconNewsMeno);
+
+     if (!newsContainer.classList.contains("d-none")) {
+      iconNewsMeno.classList.remove("d-none");
+      iconNewsPiu.classList.add("d-none");
+     }else {
+      iconNewsMeno.classList.add("d-none");
+      iconNewsPiu.classList.remove("d-none");
+     }
+    
     }); 
 
 
@@ -105,6 +119,19 @@ const newsTitle = document.querySelector(".news-title");
      const artistContainer = document.querySelector(".artist-cards-container");
      console.log(artistContainer.classList);
      artistContainer.classList.toggle("d-none")
+
+     const iconartistiPiu = document.querySelector(".icona-artisti-p");
+     const iconartistiMeno = document.querySelector(".icona-artisti-m");
+
+     console.log(iconartistiPiu, iconartistiMeno);
+
+     if (!artistContainer.classList.contains("d-none")) {
+      iconartistiMeno.classList.remove("d-none");
+      iconartistiPiu.classList.add("d-none");
+     }else {
+      iconartistiMeno.classList.add("d-none");
+      iconartistiPiu.classList.remove("d-none");
+     }
     }); 
 
 
@@ -114,7 +141,20 @@ const newsTitle = document.querySelector(".news-title");
   ticketTitle.addEventListener("click", function(){
      const ticketContainer = document.querySelector(".ticket-container");
      console.log(ticketContainer.classList);
-     ticketContainer.classList.toggle("d-none")
+     ticketContainer.classList.toggle("d-none");
+
+     const iconticketPiu = document.querySelector(".icona-ticket-p");
+     const iconticketMeno = document.querySelector(".icona-ticket-m");
+
+     console.log(iconticketPiu, iconticketMeno);
+
+     if (!ticketContainer.classList.contains("d-none")) {
+      iconticketMeno.classList.remove("d-none");
+      iconticketPiu.classList.add("d-none");
+     }else {
+      iconticketMeno.classList.add("d-none");
+      iconticketPiu.classList.remove("d-none");
+     }
     }); 
 
 
@@ -124,7 +164,20 @@ const newsTitle = document.querySelector(".news-title");
   locationTitle.addEventListener("click", function(){
      const locationContainer = document.querySelector(".location-container");
      console.log(locationContainer.classList);
-     locationContainer.classList.toggle("d-none")
+     locationContainer.classList.toggle("d-none");
+
+     const iconlocationPiu = document.querySelector(".icona-location-p");
+     const iconlocationMeno = document.querySelector(".icona-location-m");
+
+     console.log(iconlocationPiu, iconlocationMeno);
+
+     if (!locationContainer.classList.contains("d-none")) {
+      iconlocationMeno.classList.remove("d-none");
+      iconlocationPiu.classList.add("d-none");
+     }else {
+      iconlocationMeno.classList.add("d-none");
+      iconlocationPiu.classList.remove("d-none");
+     }
     }); 
 
 
@@ -134,7 +187,20 @@ const newsTitle = document.querySelector(".news-title");
   sponsorTitle.addEventListener("click", function(){
      const sponsorContainer = document.querySelector(".sponsor-container");
      console.log(sponsorContainer.classList);
-     sponsorContainer.classList.toggle("d-none")
+     sponsorContainer.classList.toggle("d-none");
+
+     const iconsponsorPiu = document.querySelector(".icona-sponsor-p");
+     const iconsponsorMeno = document.querySelector(".icona-sponsor-m");
+
+     console.log(iconsponsorPiu, iconsponsorMeno);
+
+     if (!sponsorContainer.classList.contains("d-none")) {
+      iconsponsorMeno.classList.remove("d-none");
+      iconsponsorPiu.classList.add("d-none");
+     }else {
+      iconsponsorMeno.classList.add("d-none");
+      iconsponsorPiu.classList.remove("d-none");
+     }
     }); 
 
 
