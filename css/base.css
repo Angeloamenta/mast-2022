@@ -898,6 +898,12 @@ footer {
 	}
 	/* news */
 
+	.row-news {
+		overflow-x: scroll;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
 	.news-title h2 {
 		font-size: 1.8em;
 	}
