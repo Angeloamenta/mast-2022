@@ -848,16 +848,24 @@ footer {
 	/* min-height: 40vh; */
 }
 
+
+
 /* media */
 
 @media screen and (max-width: 991px) {
-	.news-title h2,
+	
+	.news-title h2 {
+		font-size:35px;
+	}
+
+
 	.ticket-title h2,
 	.location-title h2,
 	.sponsor-title h2,
 	.artisti-title h2,
 	.artisti-title h2 {
-		font-size: 50px;
+		font-size: 35px;
+		/* margin-left: 150px; */
 	}
 
 	.stone-ticket-1{
@@ -901,6 +909,16 @@ footer {
 		from { -moz-transform: none; }
 		to { -moz-transform: none; }
 	  }
+
+
+	  .ticket-title h2,
+	.location-title h2,
+	.sponsor-title h2,
+	.artisti-title h2,
+	.artisti-title h2 {
+		font-size: 50px;
+		margin-left: unset;
+	}
 
 	.opacity {
 		opacity: 0;
