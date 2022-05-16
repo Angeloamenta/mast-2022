@@ -868,6 +868,20 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
+	#scroll-text {
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		
+		-moz-animation: my-animation 15s linear infinite;
+		-webkit-animation: my-animation 15s linear infinite;
+		animation: animation 15s linear infinite;
+	}
+
+	@-moz-keyframes animation {
+		from { -moz-transform: none; }
+		to { -moz-transform: none; }
+	  }
 
 	.opacity {
 		opacity: 0;
@@ -1061,3 +1075,21 @@ footer {
 .border-title{
 	border-top: 5px solid white;
 }
+
+
+#scroll-text {
+	/* animation properties */
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	
+	-moz-animation: my-animation 15s linear infinite;
+	-webkit-animation: my-animation 15s linear infinite;
+	animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+	from { -moz-transform: translateX(100%); }
+	to { -moz-transform: translateX(-100%); }
+  }
