@@ -850,6 +850,25 @@ footer {
 
 /* media */
 
+@media screen and (max-width: 991px) {
+	.news-title h2,
+	.ticket-title h2,
+	.location-title h2,
+	.sponsor-title h2,
+	.artisti-title h2,
+	.artisti-title h2 {
+		font-size: 50px;
+	}
+
+	.stone-ticket-1{
+		left: 40%;
+		width: 261px;
+	}
+	
+}
+
+
+
 @media screen and (max-width: 940px) {
 
 	.menu__item-img {
