@@ -287,7 +287,7 @@ const newsTitle = document.querySelector(".news-title");
 
       let cardProva = 
       `
-      <div class="col item justify-content-center">
+      <div class="col justify-content-center">
 							<div class="card-cont">
 								<div class="card">
 									<div class="row card-title m-0">
