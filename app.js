@@ -233,9 +233,110 @@ const newsTitle = document.querySelector(".news-title");
     }); 
 
 
-//     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-// if (viewportWidth > 640) {
-// 	console.log('Wide viewport');
-// } else {
-// 	console.log('Small viewport');
-// }
+    const arrayTitolo = [
+      "Dicono di noi",
+      "Prova 2",
+      "Dicono di noi 3",
+      "Test"
+  ]
+  
+  const arrayImg = [
+      "5 1.jpg",
+      "4 1.jpg",
+      "5.jpg",
+      "5 1.jpg"
+  ]
+  
+  const innerContainer = document.querySelector(".row-smartphone");
+  
+  console.log(innerContainer);
+  
+  for (let index = 0; index < arrayTitolo.length; index++) {
+      const element = arrayTitolo[index];
+      console.log(element);
+      
+      let classElement = '';
+  
+      if (index == 0) {
+          classElement = "active first";
+      } else if (index == arrayTitolo.length - 1) { //se sono nell'ultimo aggiungo classe last
+          classElement = "last";
+      }
+  
+      let titoloProva = 
+      `
+      <div class="col item ${classElement} justify-content-center">
+							<div class="card-cont">
+								<div class="card">
+									<div class="row card-title m-0">
+										<div class="col-12 d-flex align-items-center">
+											<h4 class="m-0 p-0">${arrayTitolo[index]}</h4>
+										</div>
+									</div>
+									<div class="row card-img m-0">
+										<div class="col-12 w-100 h-100 p-0">
+											<img src="img/${arrayImg[index]}" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="vector"></div>
+							</div>
+						</div>
+      `
+      innerContainer.innerHTML += (titoloProva);
+  
+  }
+  
+  const avanti = document.querySelector(".avanti");
+  
+  avanti.addEventListener ("click",function() {
+      const itemActive = document.querySelector(".active");
+      let listClasses = itemActive.classList;
+      let last = false
+      
+      for (let i = 0; i < listClasses.length; i++) {
+          if (listClasses[i] == "last") {
+              last = true;
+          }
+      }
+      
+  
+   if (last == false) {
+       itemActive.classList.remove("active");
+       let titleActive = itemActive.nextElementSibling;
+       titleActive.classList.add("active");
+       indietro.classList.remove("none");  
+  
+  
+   }else {
+       avanti.classList.add("none");
+   }
+  
+  });
+  
+  const indietro = document.querySelector(".indietro");
+  
+  
+  indietro.addEventListener ("click",function() {
+      const itemActive = document.querySelector(".active");
+      let listClasses = itemActive.classList;
+      let last = false
+      
+      for (let i = 0; i < listClasses.length; i++) {
+          if (listClasses[i] == "first") {
+              last = true;
+          }
+      }
+      
+  
+   if (last == false) {
+       itemActive.classList.remove("active");
+       let titleActive = itemActive.previousElementSibling;
+       titleActive.classList.add("active"); 
+       avanti.classList.remove("none");  
+      }else {
+          indietro.classList.add("none");
+      }
+  
+  });
+

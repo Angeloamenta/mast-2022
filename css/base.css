@@ -963,8 +963,13 @@ footer {
 	}
 	/* news */
 
+	.news .inner-cards-container {
+		display: block;
+	}
+
 	.news-cards-container {
 		transition: all 2s linear;
+		padding:50px 0;
 	}
 
 	.row-news {
@@ -1130,3 +1135,21 @@ footer {
 	from { -moz-transform: translateX(100%); }
 	to { -moz-transform: translateX(-100%); }
   }
+
+
+  .item {
+	  display: none;
+  }
+
+  .active {
+	  display: flex;
+  }
+
+  .none {
+    display: none !important;
+}
+
+.avanti,
+.indietro {
+	color: #1c1c1c;
+}
