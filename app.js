@@ -284,6 +284,31 @@ const newsTitle = document.querySelector(".news-title");
 						</div>
       `
       innerContainer.innerHTML += (titoloProva);
+
+      let cardProva = 
+      `
+      <div class="col item justify-content-center">
+							<div class="card-cont">
+								<div class="card">
+									<div class="row card-title m-0">
+										<div class="col-12 d-flex align-items-center">
+											<h4 class="m-0 p-0">${arrayTitolo[index]}</h4>
+										</div>
+									</div>
+									<div class="row card-img m-0">
+										<div class="col-12 w-100 h-100 p-0">
+											<img src="img/${arrayImg[index]}" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="vector"></div>
+							</div>
+						</div>
+      `
+     const cardsCont = document.querySelector(".card-cards");
+
+      cardsCont.innerHTML += (cardProva);
+
   
   }
   
