@@ -900,9 +900,9 @@ footer {
 		-webkit-transform: none !important;
 		transform: none !important;
 		
-		-moz-animation: my-animation 15s linear infinite;
-		-webkit-animation: my-animation 15s linear infinite;
-		animation: animation 15s linear infinite;
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		animation: none !important;
 	}
 
 	@-moz-keyframes animation {
@@ -911,7 +911,31 @@ footer {
 	  }
 
 
-	  .ticket-title h2,
+
+
+	  @-webkit-keyframes my-animation {
+		from { -webkit-transform: none !important; }
+		to { -webkit-transform: none; }
+	  }
+	  
+	  @keyframes my-animation {
+		from {
+		  -moz-transform: none !important;
+		  -webkit-transform: none !important;
+		  transform: none !important;
+		}
+		to {
+		  -moz-transform: none;
+		  -webkit-transform: none;
+		  transform: none;
+		}
+	  }  
+	
+
+
+
+
+	.ticket-title h2,
 	.location-title h2,
 	.sponsor-title h2,
 	.artisti-title h2,
@@ -1147,6 +1171,28 @@ footer {
 	from { -moz-transform: translateX(100%); }
 	to { -moz-transform: translateX(-100%); }
   }
+
+
+
+  /* for Chrome */
+@-webkit-keyframes my-animation {
+	from { -webkit-transform: translateX(100%); }
+	to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+	from {
+	  -moz-transform: translateX(100%);
+	  -webkit-transform: translateX(100%);
+	  transform: translateX(100%);
+	}
+	to {
+	  -moz-transform: translateX(-100%);
+	  -webkit-transform: translateX(-100%);
+	  transform: translateX(-100%);
+	}
+  }  
+
 
 
   .item {
