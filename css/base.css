@@ -503,7 +503,7 @@ a:focus {
 
 .row-overflow {
 	overflow-x: scroll;
-	width: 90%;
+	width: 100%;
 	z-index: 10;
 	position: relative;
 }
@@ -918,6 +918,18 @@ footer {
 	.artisti-title h2 {
 		font-size: 50px;
 		margin-left: unset;
+	}
+
+	.frame{
+
+	}
+
+	.frame .logo{
+		width: 280px;
+	}
+
+	.frame .logo img{
+		width: 100%;
 	}
 
 	.opacity {
