@@ -616,7 +616,8 @@ a:focus {
 .vector-orange {
 	width: 90%;
 	height: 90%;
-	background-color: orange;
+	/* background-color: orange; */
+	background: linear-gradient(to right, yellow, red);
 	position: absolute;
 	bottom: 0;
 	left: 0;
