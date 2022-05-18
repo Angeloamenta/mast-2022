@@ -1199,8 +1199,14 @@ footer {
 	  display: none;
   }
 
+  .op2 {
+	  opacity: 0.4;
+  }
+
   .active {
 	  display: flex;
+	  /* opacity: 1; */
+	 transition: visibility 0s, opacity 0.5s linear;
   }
 
   .none {

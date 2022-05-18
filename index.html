@@ -23,17 +23,24 @@
 	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
 	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 	</script>
+	
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script> -->
 
 	<!--script ispirato a src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script> 
+<script type="application/javascript" src="../js/javascript.js" ></script> 
+	
+  
+  
 </head>
 
 <body class="demo-1">
 	<main >
 		<section id="main" class="main">
-			<div class="frame d-flex d-sm-block">
+			<div class="frame d-flex justify-content-between d-sm-block">
 				<div class="frame__title-wrap">
 					<div class="logo">
 				  <img src="img\LOGO_payoff mast_2022.svg" alt="">
@@ -42,7 +49,7 @@
 						<br>Per info: <a href="https://www.instagram.com/occhio_vivo_mgmt/" target="_blank">info.mastfestival@gmail.com</a></p>
 				</div>
 				<div class="frame__links">
-					<a href="#main"><i class="fa-solid fa-arrow-up"></i></a>
+					<a href="#main"><i class="fa-solid fa-arrow-up m-0"></i></a>
 				</div>
 			</div>
 	

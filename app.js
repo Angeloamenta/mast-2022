@@ -33,59 +33,69 @@ function change() {
   });
 
 
-// $(mainProva).mouseout(function(){
-//   console.log("ciao");
-//   $(".stone").css('display', 'none' );
+const smartSwipe =document.querySelector(".row-smartphone");
+console.log("prova",smartSwipe);
+
+
+
+// swipe
+$(smartSwipe).on("swipeleft",function(){
+  console.log("ciao");
+  const itemActive = document.querySelector(".active");
+      let listClasses = itemActive.classList;
+      let last = false
+      
+      for (let i = 0; i < listClasses.length; i++) {
+          if (listClasses[i] == "last") {
+              last = true;
+          }
+      }
+      
   
-// })
+   if (last == false) {
+       itemActive.classList.remove("active");
+       setTimeout(function () {
+        titleActive.classList.remove("op2");
+     }, 20);
+       let titleActive = itemActive.nextElementSibling;
+       titleActive.classList.add("active");
+       indietro.classList.remove("none");  
+       titleActive.classList.add("op2");
 
-// $(mainProva).mouseover(function (e) {
-//   // $(".stone").css({ left: e.pageX, top: e.pageY });
-//    $(".stone").css('display', 'block' );
-//  });
+   }else {
+       avanti.classList.add("none");
+   }
+  
+});
 
-// var $circle = $('#stone'),
-//     $wrapper = $('.main'); 
+$(smartSwipe).on("swiperight",function(){
+  console.log("ciao2");
+  const itemActive = document.querySelector(".active");
+  let listClasses = itemActive.classList;
+  let last = false
+  
+  for (let i = 0; i < listClasses.length; i++) {
+      if (listClasses[i] == "first") {
+          last = true;
+      }
+  }
+  
 
-// function moveCircle(e) {
-//   TweenLite.to($circle, 0.3, {
-//     css: {
-//       left: e.pageX,
-//       top: e.pageY
-//     }
-//   });
-// }
+if (last == false) {
+   itemActive.classList.remove("active");
+   setTimeout(function () {
+    titleActive.classList.remove("op2");
+ }, 20);
+   let titleActive = itemActive.previousElementSibling;
+   titleActive.classList.add("active"); 
+   avanti.classList.remove("none");
+   titleActive.classList.add("op2");
 
-// var flag = false;
+  }else {
+      indietro.classList.add("none");
+  }
+});
 
-// $($wrapper).mouseover(function(){
-// flag = true;
-// TweenLite.to($circle,0.4,{scale:1,autoAlpha:1})
-// $($wrapper).on('mousemove', moveCircle);
-// });
-// $($wrapper).mouseout(function(){
-//   flag = false;
-//   TweenLite.to($circle,0.4,{scale:0.1,autoAlpha:0})
-// });
-
-
-// var app = new Vue({
-//   el: '#app',
-//   data: {
-
-//   },
-
-//   methods: {
-
-//     activeDisplay() {
-//       console.log("ciao");
-//     }
-//   },
-
-//   created() {
-//     console.log("ciao");
-//   }
-// });
 
 
 const newsTitle = document.querySelector(".news-title");
@@ -328,11 +338,13 @@ const newsTitle = document.querySelector(".news-title");
   
    if (last == false) {
        itemActive.classList.remove("active");
+       setTimeout(function () {
+        titleActive.classList.remove("op2");
+     }, 20);
        let titleActive = itemActive.nextElementSibling;
        titleActive.classList.add("active");
-       indietro.classList.remove("none");  
-  
-  
+       indietro.classList.remove("none"); 
+       titleActive.classList.add("op2");
    }else {
        avanti.classList.add("none");
    }
@@ -356,12 +368,21 @@ const newsTitle = document.querySelector(".news-title");
   
    if (last == false) {
        itemActive.classList.remove("active");
+       setTimeout(function () {
+        titleActive.classList.remove("op2");
+     }, 20);
        let titleActive = itemActive.previousElementSibling;
        titleActive.classList.add("active"); 
-       avanti.classList.remove("none");  
+       avanti.classList.remove("none");
+       titleActive.classList.add("op2");
+
       }else {
           indietro.classList.add("none");
       }
   
   });
 
+
+
+
+  
