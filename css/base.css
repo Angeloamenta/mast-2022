@@ -691,7 +691,10 @@ a:focus {
 }
 
 .ticket-container {
-	background-color: #ece9e9;
+	/* background-color: #ece9e9; */
+	background-image: url(../img/IMG_7431.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 50vh;
 	position: relative;
 }

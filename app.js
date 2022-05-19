@@ -26,7 +26,12 @@ function change() {
 
   console.log(mainProva);
 
-  
+  // $('fa-arrow-up').scrollTo('#main');
+
+ const arrow = document.querySelector(".fa-arrow-up");
+ arrow.addEventListener("click", function(){
+   mainProva.scrollIntoView();
+ });
 
  $(mainProva).mousemove(function (e) {
     $(".stone").css({ left: e.pageX - 60, top: e.pageY - 60 });
