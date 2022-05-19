@@ -702,10 +702,10 @@ a:focus {
 }
 
 .ticket-day {
-	border: 3px solid #000;
+	border: 3px solid white;
 	border-radius: 18px;
 	padding: 24px;
-	color: #000;
+	color: white;
 
 }
 
