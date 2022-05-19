@@ -503,10 +503,14 @@ a:focus {
 
 .row-overflow {
 	overflow-x: scroll;
-	width: 100%;
+	/* width: 100%; */
 	z-index: 10;
 	position: relative;
 }
+
+.row-overflow::double-button {
+	width: 0px;
+  }
 
 .row-overflow .col {
 	margin: 0 20px;
@@ -1226,4 +1230,9 @@ footer {
 
 .fa-location-dot {
 	font-size: 20PX;
+}
+
+
+.w-90 {
+	width: 90%;
 }

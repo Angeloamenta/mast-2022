@@ -245,16 +245,27 @@ const newsTitle = document.querySelector(".news-title");
 
     const arrayTitolo = [
       "Dicono di noi",
-      "Prova 2",
-      "Dicono di noi 3",
-      "Test"
+      "Seguici su Instagram",
+      "Mast 19",
+      "Mast 19",
+      "Mast 19",
+      "Mast 19",
   ]
   
   const arrayImg = [
-      "5 1.jpg",
-      "4 1.jpg",
-      "5.jpg",
-      "5 1.jpg"
+      "news-1.jpg",
+      "news-2.jpg",
+      "news-3.png"
+  ]
+
+  const linkNews = [
+    "https://www.dlso.it/site/2022/05/19/guida-migliori-festival-estate-2022/27/",
+
+    "https://www.instagram.com/mast_fest/",
+
+    "https://fb.watch/d666wXc4uL/"
+
+
   ]
   
   const innerContainer = document.querySelector(".row-smartphone");
@@ -275,7 +286,7 @@ const newsTitle = document.querySelector(".news-title");
   
       let titoloProva = 
       `
-      <div class="col item ${classElement} justify-content-center">
+      <a href="${linkNews[index]}" class="col item ${classElement} justify-content-center">
 							<div class="card-cont">
 								<div class="card">
 									<div class="row card-title m-0">
@@ -291,13 +302,13 @@ const newsTitle = document.querySelector(".news-title");
 								</div>
 								<div class="vector"></div>
 							</div>
-						</div>
+						</a>
       `
       innerContainer.innerHTML += (titoloProva);
 
       let cardProva = 
       `
-      <div class="col justify-content-center">
+      <a href="${linkNews[index]}" class="col justify-content-center">
 							<div class="card-cont">
 								<div class="card">
 									<div class="row card-title m-0">
@@ -313,7 +324,7 @@ const newsTitle = document.querySelector(".news-title");
 								</div>
 								<div class="vector"></div>
 							</div>
-						</div>
+						</a>
       `
      const cardsCont = document.querySelector(".card-cards");
 
