@@ -627,7 +627,7 @@ a:focus {
 	bottom: 0;
 	left: 0;
 	z-index: 1;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 
 }
 
@@ -639,7 +639,7 @@ a:focus {
 	position: absolute;
 	background-color: #f4f4f4;
 	z-index: 4;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	color: #000;
 
 }
@@ -848,6 +848,9 @@ a:focus {
 	transform: rotate(-315deg);
 }
 
+.sponsor-container {
+	height: 45vh;
+}
 
 /* FOOTER */
 

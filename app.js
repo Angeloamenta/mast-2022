@@ -261,7 +261,7 @@ const newsTitle = document.querySelector(".news-title");
   ]
 
   const linkNews = [
-    "https://www.dlso.it/site/2022/05/19/guida-migliori-festival-estate-2022/27/",
+    "https://www.dlso.it/site/2022/05/19/guida-migliori-festival-estate-2022/32/",
 
     "https://www.instagram.com/mast_fest/",
 
@@ -288,7 +288,7 @@ const newsTitle = document.querySelector(".news-title");
   
       let titoloProva = 
       `
-      <a href="${linkNews[index]}" class="col item ${classElement} justify-content-center">
+      <a target="_blank" href="${linkNews[index]}" class="col item ${classElement} justify-content-center">
 							<div class="card-cont">
 								<div class="card">
 									<div class="row card-title m-0">
@@ -310,7 +310,7 @@ const newsTitle = document.querySelector(".news-title");
 
       let cardProva = 
       `
-      <a href="${linkNews[index]}" class="col justify-content-center">
+      <a target="_blank" href="${linkNews[index]}" class="col justify-content-center">
 							<div class="card-cont">
 								<div class="card">
 									<div class="row card-title m-0">
