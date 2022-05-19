@@ -1244,3 +1244,7 @@ footer {
 .w-90 {
 	width: 90%;
 }
+
+.top-border {
+	border-top: 5px solid white;
+}

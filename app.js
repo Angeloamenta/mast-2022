@@ -124,9 +124,13 @@ const newsTitle = document.querySelector(".news-title");
       iconNewsMeno.classList.remove("d-none");
       iconNewsPiu.classList.add("d-none");
       newsContainer.classList.add("opacity");
+     artistTitle.classList.add("top-border")
+
      }else {
       iconNewsMeno.classList.add("d-none");
       iconNewsPiu.classList.remove("d-none");
+     artistTitle.classList.remove("top-border")
+
      }
     
     }); 
@@ -138,7 +142,8 @@ const newsTitle = document.querySelector(".news-title");
   artistTitle.addEventListener("click", function(){
      const artistContainer = document.querySelector(".artist-cards-container");
      console.log(artistContainer.classList);
-     artistContainer.classList.toggle("d-none")
+     artistContainer.classList.toggle("d-none");
+     
 
      setTimeout(function () {
       artistContainer.classList.remove("opacity");
@@ -153,10 +158,14 @@ const newsTitle = document.querySelector(".news-title");
       iconartistiMeno.classList.remove("d-none");
       iconartistiPiu.classList.add("d-none");
       artistContainer.classList.add("opacity");
+     ticketTitle.classList.add("top-border")
+
 
      }else {
       iconartistiMeno.classList.add("d-none");
       iconartistiPiu.classList.remove("d-none");
+     ticketTitle.classList.remove("top-border")
+
      }
     }); 
 
@@ -182,10 +191,14 @@ const newsTitle = document.querySelector(".news-title");
       iconticketMeno.classList.remove("d-none");
       iconticketPiu.classList.add("d-none");
       ticketContainer.classList.add("opacity");
+     locationTitle.classList.add("top-border")
+
 
      }else {
       iconticketMeno.classList.add("d-none");
       iconticketPiu.classList.remove("d-none");
+     locationTitle.classList.remove("top-border")
+
      }
     }); 
 
@@ -211,15 +224,22 @@ const newsTitle = document.querySelector(".news-title");
       iconlocationMeno.classList.remove("d-none");
       iconlocationPiu.classList.add("d-none");
       locationContainer.classList.add("opacity");
+     sponsorTitle.classList.add("top-border")
+
 
      }else {
       iconlocationMeno.classList.add("d-none");
       iconlocationPiu.classList.remove("d-none");
+     sponsorTitle.classList.remove("top-border")
+
      }
     }); 
 
 
     const sponsorTitle = document.querySelector(".sponsor-title");
+    const footer = document.querySelector(".footer");
+
+
 
 
   sponsorTitle.addEventListener("click", function(){
@@ -240,10 +260,14 @@ const newsTitle = document.querySelector(".news-title");
       iconsponsorMeno.classList.remove("d-none");
       iconsponsorPiu.classList.add("d-none");
       sponsorContainer.classList.add("opacity");
+     footer.classList.add("top-border")
+
 
      }else {
       iconsponsorMeno.classList.add("d-none");
       iconsponsorPiu.classList.remove("d-none");
+     footer.classList.remove("top-border")
+
      }
     }); 
 
