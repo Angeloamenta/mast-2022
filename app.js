@@ -18,7 +18,7 @@ function change() {
 //   circle.style.top = top + 'px';
 // });
 
-
+// console.log("grandezza",window.innerWidth);
 
 2
 3
@@ -420,6 +420,14 @@ const newsTitle = document.querySelector(".news-title");
   });
 
 
+  function reportWindowSize() {
+    if (window.innerHeight > 575) {
+     footer.classList.remove("top-border")
+     artistTitle.classList.remove("top-border")
+     sponsorTitle.classList.remove("top-border")
+     locationTitle.classList.remove("top-border")
+     ticketTitle.classList.remove("top-border")      
+    }
+  }
 
-
-  
+  window.addEventListener('resize', reportWindowSize);
