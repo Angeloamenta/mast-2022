@@ -252,9 +252,6 @@ const newsTitle = document.querySelector(".news-title");
       "Dicono di noi",
       "Seguici su Instagram",
       "Mast 19",
-      "Mast 19",
-      "Mast 19",
-      "Mast 19",
   ]
   
   const arrayImg = [
