@@ -317,7 +317,7 @@ const newsTitle = document.querySelector(".news-title");
 								<div class="card">
 									<div class="row card-title m-0">
 										<div class="col-12 d-flex align-items-center">
-											<h4 class="m-0 p-0">${arrayTitolo[index]}</h4>
+											<h4 class=" p-0">${arrayTitolo[index]}</h4>
 										</div>
 									</div>
 									<div class="row card-img m-0">
@@ -339,7 +339,7 @@ const newsTitle = document.querySelector(".news-title");
 								<div class="card">
 									<div class="row card-title m-0">
 										<div class="col-12 d-flex align-items-center">
-											<h4 class="m-0 p-0">${arrayTitolo[index]}</h4>
+											<h4 class=" p-0">${arrayTitolo[index]}</h4>
 										</div>
 									</div>
 									<div class="row card-img m-0">
