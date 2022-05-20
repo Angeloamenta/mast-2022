@@ -28,6 +28,13 @@ function change() {
 
   // $('fa-arrow-up').scrollTo('#main');
 
+ const scrollToArtist = document.querySelector(".line-up-artisti");
+
+ const artistSection = document.getElementById("artisti")
+ scrollToArtist.addEventListener("click", function(){
+   artistSection.scrollIntoView();
+ });
+
  const arrow = document.querySelector(".fa-arrow-up");
  arrow.addEventListener("click", function(){
    mainProva.scrollIntoView();
@@ -275,13 +282,14 @@ const newsTitle = document.querySelector(".news-title");
     const arrayTitolo = [
       "Dicono di noi",
       "Seguici su Instagram",
-      "Mast 19",    
+      "Mast 19",  
+
   ]
   
   const arrayImg = [
       "guida-img.jpg",
-      "news-2.jpg",
-      "news-3.png"
+      "seguici_sui_social.png",
+      "news-video.png"
   ]
 
   const linkNews = [
@@ -442,3 +450,84 @@ const newsTitle = document.querySelector(".news-title");
   }
 
   window.addEventListener('resize', reportWindowSize);
+
+
+
+  // scroll news
+
+  const scrollAvanti = document.querySelector(".scroll-avanti");
+  const overflowRowNews = document.querySelector(".overflow-news");
+  console.log(overflowRowNews);
+
+scrollAvanti.addEventListener("click", function() {
+  overflowRowNews.scrollBy({
+    top: 0,
+    left: 500,
+    behavior : "smooth"
+});
+  console.log("bottone",overflowRowNews.offsetWidth,overflowRowNews.scrollLeft, overflowRowNews.scrollWidth);
+
+  if (overflowRowNews.offsetWidth + overflowRowNews.scrollLeft >= overflowRowNews.scrollWidth) {
+    overflowRowNews.scrollLeft = 0;
+  }
+
+})
+
+const scrollindietro = document.querySelector(".scroll-indietro");
+console.log(overflowRowNews);
+
+scrollindietro.addEventListener("click", function() {
+overflowRowNews.scrollBy({
+  top: 0,
+  left: -500,
+  behavior : "smooth"
+});
+
+// if (overflowRowNews.scrollLeft <= 0) {
+//   overflowRowNews.scrollLeft = overflowRowNews.scrollWidth;
+// }
+
+
+console.log("bottone",overflowRowNews.offsetWidth,overflowRowNews.scrollLeft, overflowRowNews.scrollWidth);
+
+})
+
+
+// scroll artisti
+
+const scrollAvantiArtisti = document.querySelector(".scroll-avanti-artisti");
+const overflowArtisti = document.querySelector(".artisti-overflow");
+console.log(overflowArtisti);
+
+scrollAvantiArtisti.addEventListener("click", function() {
+overflowArtisti.scrollBy({
+  top: 0,
+  left: 500,
+  behavior : "smooth"
+});
+console.log("bottone",overflowArtisti.offsetWidth,overflowArtisti.scrollLeft, overflowArtisti.scrollWidth);
+
+if (overflowArtisti.offsetWidth + overflowArtisti.scrollLeft >= overflowArtisti.scrollWidth) {
+  overflowArtisti.scrollLeft = 0;
+}
+
+})
+
+const scrollIndietroArtisti = document.querySelector(".scroll-indietro-artisti");
+
+
+scrollIndietroArtisti.addEventListener("click", function() {
+overflowArtisti.scrollBy({
+top: 0,
+left: -500,
+behavior : "smooth"
+});
+
+// if (overflowArtisti.scrollLeft <= 0) {
+//   overflowArtisti.scrollLeft = overflowArtisti.scrollWidth;
+// }
+
+
+console.log("bottone",overflowArtisti.offsetWidth,overflowArtisti.scrollLeft, overflowArtisti.scrollWidth);
+
+})

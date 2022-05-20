@@ -45,8 +45,8 @@
 					<div class="logo">
 				  <img src="img\LOGO_payoff mast_2022.svg" alt="">
 				</div>
-					<p class="frame__info d-none d-sm-block">Created by: Occhio vivo asp
-						<br>Per info: <a href="https://www.instagram.com/occhio_vivo_mgmt/" target="_blank">info.mastfestival@gmail.com</a></p>
+					<!-- <p class="frame__info d-none d-sm-block">Created by: Occhio vivo asp
+						<br>Per info: <a href="https://www.instagram.com/occhio_vivo_mgmt/" target="_blank">info.mastfestival@gmail.com</a></p> -->
 				</div>
 				<div class="frame__links">
 					<a href="#main"><i class="fa-solid fa-arrow-up m-0"></i></a>
@@ -59,18 +59,18 @@
 				<div class="menu__item">
 					<a class="menu__item-link">11-12-13 AGOSTO </a>
 					<img class="menu__item-img" src="img/news-2.jpg" alt="Some image"/>
-					<div class="marquee">
+					<!-- <div class="marquee">
 						<div class="marquee__inner" aria-hidden="true">
 							<span>coming soon /</span>
 							<span>coming soon /</span>
 							<span>coming soon /</span>
 							<span>coming soon /</span>
 						</div>
-					</div>
+					</div> -->
 				</div>
 	
 				<div class="menu__item">
-					<a class="menu__item-fix">COMING SOON </a>
+					<a class="menu__item-fix line-up-artisti">LINE UP</a>
 					<img class="menu__item-img" src="img/1.png" alt="Some image"/>
 				</div>
 	
@@ -138,9 +138,12 @@
 				<img class="stone-img-sx d-none d-sm-block" src="img/cursor1.png">
 				<img class="stone-img-dx d-none d-sm-block" src="img/cursor1.png">
 			</div>
-			<div class="news-cards-container opacity d-none d-sm-block">
+			<div class="news-cards-container opacity d-none d-sm-flex">
+				<div class="arrow-scroll scroll-indietro">
+					<i class="fa-solid fa-chevron-left"></i>
+				</div>
 				<div class="inner-cards-container container-fluid">
-					<div class="d-none d-sm-flex row flex-sm-nowrap row-news row-overflow card-cards">
+					<div class="d-none d-sm-flex row flex-sm-nowrap row-news row-overflow card-cards overflow-news">
 
 						<!-- <div class="col">
 							<div class="card-cont">
@@ -214,6 +217,7 @@
 
 
 					</div>
+
 					<div class="row d-flex d-sm-none row-smartphone">
 
 					</div>
@@ -225,6 +229,9 @@
 							<i class="avanti fa-solid fa-circle-arrow-right"></i>
 					</div>
 					</div>
+				</div>
+				<div class="arrow-scroll scroll-avanti">
+					<i class="fa-solid fa-chevron-right"></i>
 				</div>
 			</div>
 		</section>
@@ -246,9 +253,12 @@
 				<img class="stone-artisti d-none d-sm-block" src="img/cursor1.png">
 			</div>
 			<div>
-				<div class="opacity artist-cards-container container-fluid d-none d-sm-block mt-5 py-5">
+				<div class="opacity artist-cards-container container-fluid d-none d-sm-flex mt-5 py-5">
+					<div class="arrow-scroll scroll-indietro-artisti">
+						<i class="fa-solid fa-chevron-left"></i>
+					</div>
 				<div class="inner-cards-container">
-					<div class="row flex-sm-nowrap py-5 row-overflow">
+					<div class="row flex-sm-nowrap py-5 row-overflow artisti-overflow">
 						<!-- card artisti da clonare -->
 						<div class="col mx-4 d-flex justify-content-center">
 							<div class="card-artisti">
@@ -296,17 +306,154 @@
 						</div>
 
 						<!-- fine card artisti -->
+						<div class="col mx-4 d-flex justify-content-center blur">
+							<div class="card-artisti">
+								<div class="artista">
+									<div class=" h-100 container-fluid">
+										<div class="row artista-title">
+											<div class="col-6 d-flex justify-content-start align-items-center">
+												<h3 class="p-0 m-0">POPOLOUS</h3>
+											</div>
+											<div class="col-6 d-flex justify-content-end align-items-center">
+												<h5>
+													DAY 3
+												</h5>
+											</div>
+										</div>
+										<div class="row artista-img">
+											<div class="col h-100 p-0 m-0">
+												<img src="img/1.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vector-orange">
+
+								</div>
+								<div class="player container-fluid">
+									<div class="row h-50">
+										<div class="col-8 justify-content-start align-items-center d-flex px-4">
+											<h5>POPOLOUS</h5>
+										</div>
+										<div class="col-4 justify-content-end align-items-center d-flex">
+											<a target="_blank" href="https://open.spotify.com/artist/5Uy8Skuxzxf38jMDTndKIU"><i class="fa-solid fa-play fs-rem-2"></i></a>
+										</div>
+									</div>
+									<div class="row h-50">
+										<div class="col-12 col-sm-8 d-flex align-items-end px-4">
+											<p> {13/08}<br>SCICLI(RG)</p>
+										</div>
+										<div class="col-12 col-sm-4 align-items-end justify-content-end d-none">
+											<a href=""><p>BIGLIETTI</p></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col mx-4 d-flex justify-content-center blur">
+							<div class="card-artisti">
+								<div class="artista">
+									<div class=" h-100 container-fluid">
+										<div class="row artista-title">
+											<div class="col-6 d-flex justify-content-start align-items-center">
+												<h3 class="p-0 m-0">POPOLOUS</h3>
+											</div>
+											<div class="col-6 d-flex justify-content-end align-items-center">
+												<h5>
+													DAY 3
+												</h5>
+											</div>
+										</div>
+										<div class="row artista-img">
+											<div class="col h-100 p-0 m-0">
+												<img src="img/1.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vector-orange">
+
+								</div>
+								<div class="player container-fluid">
+									<div class="row h-50">
+										<div class="col-8 justify-content-start align-items-center d-flex px-4">
+											<h5>POPOLOUS</h5>
+										</div>
+										<div class="col-4 justify-content-end align-items-center d-flex">
+											<a target="_blank" href="https://open.spotify.com/artist/5Uy8Skuxzxf38jMDTndKIU"><i class="fa-solid fa-play fs-rem-2"></i></a>
+										</div>
+									</div>
+									<div class="row h-50">
+										<div class="col-12 col-sm-8 d-flex align-items-end px-4">
+											<p> {13/08}<br>SCICLI(RG)</p>
+										</div>
+										<div class="col-12 col-sm-4 align-items-end justify-content-end d-none">
+											<a href=""><p>BIGLIETTI</p></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col mx-4 d-flex justify-content-center blur">
+							<div class="card-artisti">
+								<div class="artista">
+									<div class=" h-100 container-fluid">
+										<div class="row artista-title">
+											<div class="col-6 d-flex justify-content-start align-items-center">
+												<h3 class="p-0 m-0">POPOLOUS</h3>
+											</div>
+											<div class="col-6 d-flex justify-content-end align-items-center">
+												<h5>
+													DAY 3
+												</h5>
+											</div>
+										</div>
+										<div class="row artista-img">
+											<div class="col h-100 p-0 m-0">
+												<img src="img/1.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="vector-orange">
+
+								</div>
+								<div class="player container-fluid">
+									<div class="row h-50">
+										<div class="col-8 justify-content-start align-items-center d-flex px-4">
+											<h5>POPOLOUS</h5>
+										</div>
+										<div class="col-4 justify-content-end align-items-center d-flex">
+											<a target="_blank" href="https://open.spotify.com/artist/5Uy8Skuxzxf38jMDTndKIU"><i class="fa-solid fa-play fs-rem-2"></i></a>
+										</div>
+									</div>
+									<div class="row h-50">
+										<div class="col-12 col-sm-8 d-flex align-items-end px-4">
+											<p> {13/08}<br>SCICLI(RG)</p>
+										</div>
+										<div class="col-12 col-sm-4 align-items-end justify-content-end d-none">
+											<a href=""><p>BIGLIETTI</p></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
 
 
 
 					</div>
 				</div>
+				<div class="arrow-scroll scroll-avanti-artisti">
+					<i class="fa-solid fa-chevron-right"></i>
+				</div>
 			</div>
 		</section>
 
 		<!-- tickets -->
-		<section id="ticket" class="ticket mt-sm-5">
+		<section id="ticket" class="ticket mt-sm-5 d-none">
 			<div class="container-fluid ticket-title">
 				<div class="row h-100 overflow-hidden">
 					<div id="scroll-text" class="col-12 d-flex align-items-center justify-content-sm-around">
@@ -345,7 +492,7 @@
 
 		<!-- location -->
 
-		<section id="location" class="location mb-80">
+		<section id="location" class="location mb-80 d-none">
 			<div class="container-fluid location-title">
 				<div class="row h-100 overflow-hidden">
 					<div id="scroll-text" class="col-12 d-flex h-100 align-items-center justify-content-sm-between">
@@ -530,23 +677,16 @@
 	<footer>
 		<div class="fluid-container h-100 m-0 footer">
 			<div class="row h-100 py-5 d-flex align-items-center m-0">
-				<div class="my-4 col-12 col-md-4">
+				<div class="my-4 col-12 col-lg-4">
 					<img src="img\LOGO_payoff mast_2022.svg" alt="">
 				</div>
-				<div class="my-4 col-12 col-md-2 d-flex justify-content-center">
-					<p>lorem ipsum</p>
+				<div class="my-4 col-12 col-lg-4 d-flex justify-content-center">
+					<p class="frame__info d-none d-sm-block">Created by: Occhio vivo asp
+						<br>Per info: <a href="https://www.instagram.com/occhio_vivo_mgmt/" target="_blank">info.mastfestival@gmail.com</a></p>
 
 				</div>
-				<div class="my-4 col-12 col-md-2 d-flex justify-content-center">
-					<p>lorem ipsum</p>
-
-				</div>
-				<div class="my-4 col-12 col-md-2 d-flex justify-content-center">
-					<p>lorem ipsum</p>
-
-				</div>
-				<div class="my-4 col-12 col-md-2 d-flex justify-content-center">
-					<p>lorem ipsum</p>
+				<div class="my-4 col-12 col-lg-4 d-flex justify-content-center">
+					<p>Web impanato e fritto da:<br><a href="https://www.putiadigitale.it/?utm_source=client&amp;utm_medium=landingpage-mast&amp;utm_campaign=mast" target="_blank"> putia digitale</a></p>
 
 				</div>
 			</div>
