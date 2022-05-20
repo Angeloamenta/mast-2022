@@ -275,11 +275,11 @@ const newsTitle = document.querySelector(".news-title");
     const arrayTitolo = [
       "Dicono di noi",
       "Seguici su Instagram",
-      "Mast 19",
+      "Mast 19",    
   ]
   
   const arrayImg = [
-      "news-1.jpg",
+      "guida-img.jpg",
       "news-2.jpg",
       "news-3.png"
   ]
@@ -292,6 +292,12 @@ const newsTitle = document.querySelector(".news-title");
     "https://fb.watch/d666wXc4uL/"
 
 
+  ]
+
+  const objectCover = [
+    "object-cover",
+    "",
+    "",
   ]
   
   const innerContainer = document.querySelector(".row-smartphone");
@@ -322,7 +328,7 @@ const newsTitle = document.querySelector(".news-title");
 									</div>
 									<div class="row card-img m-0">
 										<div class="col-12 w-100 h-100 p-0">
-											<img src="img/${arrayImg[index]}" alt="">
+											<img class="${objectCover[index]} image-news" src="img/${arrayImg[index]}" alt="">
 										</div>
 									</div>
 								</div>
@@ -344,7 +350,7 @@ const newsTitle = document.querySelector(".news-title");
 									</div>
 									<div class="row card-img m-0">
 										<div class="col-12 w-100 h-100 p-0">
-											<img src="img/${arrayImg[index]}" alt="">
+											<img class="${objectCover[index]} image-news" src="img/${arrayImg[index]}" alt="">
 										</div>
 									</div>
 								</div>
@@ -427,6 +433,11 @@ const newsTitle = document.querySelector(".news-title");
      sponsorTitle.classList.remove("top-border")
      locationTitle.classList.remove("top-border")
      ticketTitle.classList.remove("top-border")      
+    }
+
+    if (window.innerHeight == 575) {
+     sponsorContainer.classList.toggle("d-none");
+      
     }
   }
 
