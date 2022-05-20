@@ -319,7 +319,7 @@ const newsTitle = document.querySelector(".news-title");
       let titoloProva = 
       `
       <a target="_blank" href="${linkNews[index]}" class="col item ${classElement} justify-content-center">
-							<div class="card-cont">
+							<div class="card-cont d-flex justify-content-center">
 								<div class="card">
 									<div class="row card-title m-0">
 										<div class="col-12 d-flex align-items-center">
@@ -341,7 +341,7 @@ const newsTitle = document.querySelector(".news-title");
       let cardProva = 
       `
       <a target="_blank" href="${linkNews[index]}" class="col justify-content-center">
-							<div class="card-cont">
+							<div class="card-cont d-flex justify-content-center">
 								<div class="card">
 									<div class="row card-title m-0">
 										<div class="col-12 d-flex align-items-center">
