@@ -166,12 +166,16 @@ const newsTitle = document.querySelector(".news-title");
       iconartistiPiu.classList.add("d-none");
       artistContainer.classList.add("opacity");
      ticketTitle.classList.add("top-border")
+     sponsorTitle.classList.add("top-border")
+
 
 
      }else {
       iconartistiMeno.classList.add("d-none");
       iconartistiPiu.classList.remove("d-none");
      ticketTitle.classList.remove("top-border")
+     sponsorTitle.classList.remove("top-border")
+
 
      }
     }); 
