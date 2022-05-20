@@ -531,7 +531,7 @@ a:focus {
 } 
 
 .card-title {
-	height: 40px;
+	min-height: 40px;
 }
 
 .card-img img {
@@ -594,7 +594,7 @@ a:focus {
 }
 
 .artista-title {
-	height: 40px;
+	min-height: 40px;
 }
 
 .artista-title h3 {
