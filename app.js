@@ -291,7 +291,7 @@ const newsTitle = document.querySelector(".news-title");
   ]
   
   const arrayImg = [
-      "guida-img.jpg",
+      "NEWS PER mast.png",
       "seguici_sui_social.png",
       "news-video.png"
   ]
