@@ -297,7 +297,7 @@ const newsTitle = document.querySelector(".news-title");
   const objectCover = [
     "object-cover",
     "",
-    "",
+    "object-cover",
   ]
   
   const innerContainer = document.querySelector(".row-smartphone");
