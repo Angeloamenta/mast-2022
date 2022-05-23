@@ -28,12 +28,7 @@ function change() {
 
   // $('fa-arrow-up').scrollTo('#main');
 
- const scrollToArtist = document.querySelector(".line-up-artisti");
-
- const artistSection = document.getElementById("artisti")
- scrollToArtist.addEventListener("click", function(){
-   artistSection.scrollIntoView();
- });
+ 
 
  const arrow = document.querySelector(".fa-arrow-up");
  arrow.addEventListener("click", function(){
@@ -144,10 +139,11 @@ const newsTitle = document.querySelector(".news-title");
 
 
     const artistTitle = document.querySelector(".artisti-title");
+    
 
+    const artistContainer = document.querySelector(".artist-cards-container");
 
   artistTitle.addEventListener("click", function(){
-     const artistContainer = document.querySelector(".artist-cards-container");
      console.log(artistContainer.classList);
      artistContainer.classList.toggle("d-none");
      
@@ -179,6 +175,15 @@ const newsTitle = document.querySelector(".news-title");
 
      }
     }); 
+
+    const scrollToArtist = document.querySelector(".line-up-artisti");
+
+ const artistSection = document.getElementById("artisti")
+ scrollToArtist.addEventListener("click", function(){
+   artistSection.scrollIntoView();
+   artistContainer.classList.remove("d-none");
+
+ });
 
 
     const ticketTitle = document.querySelector(".ticket-title");
@@ -438,22 +443,24 @@ const newsTitle = document.querySelector(".news-title");
   });
 
 
-  function reportWindowSize() {
-    if (window.innerHeight > 575) {
-     footer.classList.remove("top-border")
-     artistTitle.classList.remove("top-border")
-     sponsorTitle.classList.remove("top-border")
-     locationTitle.classList.remove("top-border")
-     ticketTitle.classList.remove("top-border")      
-    }
+  // resize
 
-    if (window.innerHeight == 575) {
-     sponsorContainer.classList.toggle("d-none");
+  // function reportWindowSize() {
+  //   if (window.innerHeight > 575) {
+  //    footer.classList.remove("top-border")
+  //    artistTitle.classList.remove("top-border")
+  //    sponsorTitle.classList.remove("top-border")
+  //    locationTitle.classList.remove("top-border")
+  //    ticketTitle.classList.remove("top-border")      
+  //   }
+
+  //   if (window.innerHeight == 575) {
+  //    sponsorContainer.classList.toggle("d-none");
       
-    }
-  }
+  //   }
+  // }
 
-  window.addEventListener('resize', reportWindowSize);
+  // window.addEventListener('resize', reportWindowSize);
 
 
 
