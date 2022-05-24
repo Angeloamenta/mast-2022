@@ -1177,8 +1177,10 @@ footer {
 	/* sponsor */
 	.sponsor-container {
 		transition: all 2s linear;
+	}
 
-
+	.sponsor-container img {
+		width: 90%;
 	}
 	.sponsor-title{
 		border-top: 0;
@@ -1191,6 +1193,8 @@ footer {
 	.stone-sponsor-2{
 		display: none;
 	}
+
+
 }
 
 .border-title{

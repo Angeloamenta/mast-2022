@@ -182,6 +182,12 @@ const newsTitle = document.querySelector(".news-title");
  scrollToArtist.addEventListener("click", function(){
    artistSection.scrollIntoView();
    artistContainer.classList.remove("d-none");
+   sponsorTitle.classList.add("top-border")
+
+   setTimeout(function () {
+    artistContainer.classList.remove("opacity");
+ }, 20);
+
 
  });
 
@@ -262,6 +268,8 @@ const newsTitle = document.querySelector(".news-title");
      const sponsorContainer = document.querySelector(".sponsor-container");
      console.log(sponsorContainer.classList);
      sponsorContainer.classList.toggle("d-none");
+     
+
 
      setTimeout(function () {
       sponsorContainer.classList.remove("opacity");
