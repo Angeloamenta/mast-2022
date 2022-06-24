@@ -736,7 +736,8 @@ background: linear-gradient(184deg, rgba(194,182,182,1) 0%, rgba(134,134,134,1) 
 	border-radius: 18px;
 	padding: 24px;
 	color: white;
-
+	width: 100px;
+	
 }
 
 /* LOCATION */
