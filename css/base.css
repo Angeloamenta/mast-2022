@@ -216,6 +216,11 @@ a:focus {
 	opacity: 0;
 }
 
+/* .menu__item-link:nth-child(2):hover {
+	transition-duration: 0.1s;
+	 opacity: 0; 
+} */
+
 .menu__item-img {
 	pointer-events: none;
 	position: absolute;
@@ -706,7 +711,7 @@ background: linear-gradient(184deg, rgba(194,182,182,1) 0%, rgba(134,134,134,1) 
 
 .stone-ticket-1{
 	top: -90%;
-	left: 20%;
+	left: 10%;
 
 }
 
@@ -722,7 +727,7 @@ background: linear-gradient(184deg, rgba(194,182,182,1) 0%, rgba(134,134,134,1) 
 	background-image: url(../img/IMG_7431.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 50vh;
+	min-height: 50vh;
 	position: relative;
 }
 

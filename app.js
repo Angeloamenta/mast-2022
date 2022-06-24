@@ -176,7 +176,7 @@ const newsTitle = document.querySelector(".news-title");
      }
     }); 
 
-    const scrollToArtist = document.querySelector(".line-up-artisti");
+  const scrollToArtist = document.querySelector(".line-up-artisti");
 
  const artistSection = document.getElementById("artisti")
  scrollToArtist.addEventListener("click", function(){
@@ -187,9 +187,23 @@ const newsTitle = document.querySelector(".news-title");
    setTimeout(function () {
     artistContainer.classList.remove("opacity");
  }, 20);
+});
 
+ const scrollToticket = document.querySelector(".ticket-up-title");
 
- });
+ const ticketSection = document.getElementById("ticket")
+ const ticketContainer = document.querySelector(".ticket-cards-container");
+ scrollToticket.addEventListener("click", function(){
+   ticketSection.scrollIntoView();
+   ticketContainer.classList.remove("d-none");
+   sponsorTitle.classList.add("top-border")
+
+   setTimeout(function () {
+    ticketContainer.classList.remove("opacity");
+ }, 20);
+
+});
+
 
 
     const ticketTitle = document.querySelector(".ticket-title");
