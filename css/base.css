@@ -885,6 +885,7 @@ background: linear-gradient(184deg, rgba(194,182,182,1) 0%, rgba(134,134,134,1) 
 
 .sponsor-container {
 	height: 45vh;
+	min-height: 45vh;
 }
 
 /* FOOTER */
@@ -1185,6 +1186,7 @@ footer {
 	/* sponsor */
 	.sponsor-container {
 		transition: all 2s linear;
+		height: unset;
 	}
 
 	.sponsor-container img {
