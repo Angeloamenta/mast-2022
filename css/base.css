@@ -734,9 +734,11 @@ background: linear-gradient(184deg, rgba(194,182,182,1) 0%, rgba(134,134,134,1) 
 .ticket-day {
 	border: 3px solid white;
 	border-radius: 18px;
-	padding: 24px;
+	padding: 10px;
 	color: white;
-	width: 100px;
+	font-size: 1.5em;
+	height: 200px;
+
 	
 }
 
