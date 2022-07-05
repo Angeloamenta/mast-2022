@@ -633,7 +633,7 @@ background: linear-gradient(184deg, rgba(194,182,182,1) 0%, rgba(134,134,134,1) 
 }
 
 .artista-img {
-	height: calc(100% - 40px);
+	height: calc(100% - 100px);
 	border-top: 1px solid #000;
 }
 
@@ -1116,6 +1116,11 @@ footer {
 		font-size: 14px;
 	}
 
+	.artista-img {
+		height: calc(100% - 110px);
+		border-top: 1px solid #000;
+	}
+
 	.player {
 		height: 40%;
 		width: 87%;
@@ -1148,6 +1153,12 @@ footer {
 	.artista-title h5 {
 		font-size: 14px;
 	}
+
+	.artista-title {
+		font-size: 0.8em;
+		text-align: end;
+		margin-right: 0px;
+	  }
 
 	/* ticket  */
 
