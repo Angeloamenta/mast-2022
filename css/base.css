@@ -947,6 +947,10 @@ footer {
 	overflow-x: hidden;
 }
 
+.padding-p {
+	padding: 0.5rem!important;
+  }
+
 @media screen and (max-width: 575px) {
 	#scroll-text {
 		-moz-transform: none !important;
@@ -986,7 +990,12 @@ footer {
 	
 
 	  .padding-0 {
-		  padding: 0;
+		  padding: 0 !important;
+	  }
+
+	  .padding-p {
+		padding: unset !important;
+		padding-right: 10px !important;
 	  }
 
 	  .arrow-scroll {
