@@ -228,12 +228,14 @@ const newsTitle = document.querySelector(".news-title");
       iconticketPiu.classList.add("d-none");
       ticketContainer.classList.add("opacity");
      locationTitle.classList.add("top-border")
+     sponsorTitle.classList.add("top-border")
 
 
      }else {
       iconticketMeno.classList.add("d-none");
       iconticketPiu.classList.remove("d-none");
      locationTitle.classList.remove("top-border")
+     sponsorTitle.classList.remove("top-border")
 
      }
     }); 
