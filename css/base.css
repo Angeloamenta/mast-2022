@@ -943,6 +943,10 @@ footer {
 	
 }
 
+#artisti{
+	overflow-x: hidden;
+}
+
 @media screen and (max-width: 575px) {
 	#scroll-text {
 		-moz-transform: none !important;
@@ -1150,9 +1154,7 @@ footer {
 		margin-bottom: 170px;
 	}
 
-	.artista-title h2{
-		font-size: 1.8em;
-	}
+	
 
 	.artista-title h5 {
 		font-size: 14px;
@@ -1160,9 +1162,12 @@ footer {
 
 	.artista-title {
 		font-size: 0.8em;
-		text-align: end;
 		margin-right: 0px;
 	  }
+
+	  .artista-title h2{
+		font-size: 1.8em !important;
+	}
 
 	/* ticket  */
 
