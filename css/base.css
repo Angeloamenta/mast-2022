@@ -981,6 +981,10 @@ footer {
 	  }  
 	
 
+	  .padding-0 {
+		  padding: 0;
+	  }
+
 	  .arrow-scroll {
 		  display: none !important;
 	  }
